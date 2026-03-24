@@ -1,119 +1,205 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Currículo — Tauã P. S. Silva</title>
-  <style>
-    :root { --fiap-pink:#ed1447; --ink:#111111; --muted:#4b5563; --line:#e5e7eb; --soft:#f7f7f8; --dark:#0a0a0a; }
-    *{box-sizing:border-box} html,body{margin:0;padding:0;background:#fff;color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
-    .container{max-width:900px;margin:28px auto;padding:20px}
-    .topbar{height:8px;background:linear-gradient(90deg,var(--fiap-pink),#ff6b8b);border-radius:6px}
-    .header{display:flex;gap:16px;align-items:center;margin-top:18px}
-    .photo{width:84px;height:84px;border-radius:999px;background:#f0f0f0;display:inline-block}
-    .name{font-size:26px;font-weight:800;margin:0;text-transform:uppercase}
-    .headline{margin:6px 0 0;color:var(--muted);font-weight:600}
-    .contact{margin-left:auto;text-align:right;color:var(--muted);font-size:13px}
-    .grid{display:grid;grid-template-columns:280px 1fr;gap:18px;margin-top:20px}
-    .card{border:1px solid var(--line);padding:12px;border-radius:10px;background:#fff}
-    .section-title{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px}
-    .chips{display:flex;flex-wrap:wrap;gap:6px}
-    .chip{font-size:12px;padding:6px 8px;border-radius:999px;background:var(--soft);border:1px solid var(--line);font-weight:700}
-    .exp-item{border-left:4px solid var(--fiap-pink);padding:10px 12px;margin-bottom:12px;border-radius:6px}
-    ul{padding-left:18px;margin:6px 0}
-    .footer{margin-top:18px;color:var(--muted);font-size:13px}
-    @media (max-width:720px){.grid{grid-template-columns:1fr}.contact{text-align:left;margin-left:0}}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="topbar"></div>
-    <header class="header">
-      <div class="photo" aria-hidden="true"></div>
-      <div>
-        <h1 class="name">Tauã P. S. Silva</h1>
-        <div class="headline">Desenvolvedor Web • Front-end • UI/UX</div>
-      </div>
-      <div class="contact">
-        <div>Email: <a href="mailto:seu-email@exemplo.com">seu-email@exemplo.com</a></div>
-        <div>Tel: (00) 0 0000-0000</div>
-        <div><a href="#portfolio">Portfólio</a> • <a href="#contato">Contato</a></div>
-      </div>
-    </header>
-
-    <main class="grid">
-      <aside>
-        <section class="card">
-          <div class="section-title">Resumo</div>
-          <p style="margin:0;color:var(--muted)">Desenvolvedor com foco em interfaces responsivas, HTML/CSS/JavaScript moderno e boas práticas de acessibilidade. Experiência em projetos colaborativos e entrega orientada a resultados.</p>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Curriculo - Tauã P. S. Silva</title>
+<style>
+    :root {
+      --fiap-pink: #ed1447;
+      --ink: #111111;
+      --muted: #4b5563;
+      --muted-2: #6b7280;
+      --line: #e5e7eb;
+      --soft: #f7f7f8;
+      --dark: #0a0a0a;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #ffffff; color: var(--ink); 
+font-family: Inter, Arial, Helvetica, sans-serif; }                                 body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { width: 210mm; min-height: 297mm; margin: 0 auto; background: white; 
+}                                                                                   .topbar { height: 8px; background: linear-gradient(90deg, var(--fiap-pink), 
+#ff6b8b); }                                                                         .wrap { padding: 14mm 14mm 12mm; }
+    .header { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; al
+ign-items: center; padding-bottom: 14px; border-bottom: 2px solid var(--line); }    .photo { width: 54px; height: 54px; border-radius: 999px; object-fit: cover;
+ border: 2px solid #ffffff; box-shadow: 0 0 0 1px var(--line); }                    .name { margin: 0; font-size: 22px; font-weight: 800; letter-spacing: -0.02e
+m; text-transform: uppercase; line-height: 1.05; }                                  .headline { margin: 4px 0 0; color: var(--muted); font-size: 11px; line-heig
+ht: 1.45; font-weight: 600; }                                                       .contact { text-align: right; font-size: 10px; line-height: 1.5; color: var(
+--muted); }                                                                         .contact a { color: inherit; text-decoration: none; }
+    .grid { display: grid; grid-template-columns: 34% 1fr; gap: 16px; margin-top
+: 12px; }                                                                           .col { min-width: 0; }
+    .section { margin-bottom: 12px; page-break-inside: avoid; break-inside: avoi
+d; }                                                                                .section-title { display: flex; align-items: center; gap: 8px; margin: 0 0 7
+px; font-size: 10px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--dark); }                                                     .section-title::before { content: ''; width: 14px; height: 3px; border-radiu
+s: 999px; background: var(--fiap-pink); display: inline-block; }                    .card { border: 1px solid var(--line); border-radius: 10px; padding: 9px 9px
+; background: #ffffff; }                                                            .summary { font-size: 10px; line-height: 1.55; color: var(--muted); }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { font-size: 9.2px; line-height: 1; padding: 6px 8px; border-radius: 9
+99px; background: var(--soft); border: 1px solid var(--line); color: var(--ink); font-weight: 700; }                                                                .chip.pink { background: #fff1f5; border-color: #f8bfd0; color: #971536; }
+    .edu-item, .mini-item { margin-bottom: 8px; }
+    .edu-item:last-child, .mini-item:last-child { margin-bottom: 0; }
+    .item-title { margin: 0; font-size: 10.6px; font-weight: 800; line-height: 1
+.35; }                                                                              .item-meta { margin: 2px 0 0; font-size: 9.8px; color: var(--muted); line-he
+ight: 1.45; }                                                                       .item-sub { margin: 4px 0 0; font-size: 9.5px; color: var(--muted-2); line-h
+eight: 1.5; }                                                                       .exp-item { border: 1px solid var(--line); border-radius: 11px; padding: 9px
+ 9px; margin-bottom: 8px; page-break-inside: avoid; break-inside: avoid; }          .exp-top { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-
+items: start; }                                                                     .exp-role { margin: 0; font-size: 11px; font-weight: 800; line-height: 1.35;
+ }                                                                              </div>
+</html>
+            <p class="item-sub">Suporte em projetos web, testes e integração com
+ APIs.</p>                                                                                </div>
         </section>
 
-        <section class="card" style="margin-top:12px">
-          <div class="section-title">Skills</div>
-          <div class="chips">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">React</span>
-            <span class="chip">Git</span>
+        <section class="section card">
+          <h3 class="section-title">Projetos</h3>
+          <div class="mini-item">
+            <p class="item-title">Projeto Pessoal</p>
+            <p class="item-meta">Site pessoal responsivo</p>
           </div>
         </section>
+      </main>
+    </div>
 
-        <section class="card" style="margin-top:12px">
-          <div class="section-title">Educação</div>
-          <div style="color:var(--muted);font-size:14px">Seu curso • Instituição</div>
-          <div style="color:var(--muted);font-size:13px">2020 — 2023</div>
-        </section>
-      </aside>
-
-      <section>
-        <div class="card">
-          <div class="section-title">Experiência</div>
-          <article class="exp-item">
-            <div style="display:flex;justify-content:space-between;align-items:start">
-              <div>
-                <div style="font-weight:800">Desenvolvedor Front-end</div>
-                <div style="color:var(--muted)">Empresa Exemplo</div>
-              </div>
-              <div style="color:var(--muted)">Jan 2022 — Atual</div>
-            </div>
-            <ul>
-              <li>Criação de componentes responsivos e acessíveis.</li>
-              <li>Otimização de performance e melhores práticas de SEO.</li>
-            </ul>
-          </article>
-
-          <article class="exp-item">
-            <div style="display:flex;justify-content:space-between;align-items:start">
-              <div>
-                <div style="font-weight:800">Estagiário de Front-end</div>
-                <div style="color:var(--muted)">Outra Empresa</div>
-              </div>
-              <div style="color:var(--muted)">Mar 2020 — Dez 2021</div>
-            </div>
-            <ul>
-              <li>Manutenção de sites institucionais e integração com APIs.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="card" style="margin-top:12px" id="portfolio">
-          <div class="section-title">Projetos</div>
-          <ul>
-            <li><strong>Projeto A</strong> — Página pessoal responsiva (link)</li>
-            <li><strong>Projeto B</strong> — SPA com React (link)</li>
-          </ul>
-        </div>
-
-        <div class="card" style="margin-top:12px" id="contato">
-          <div class="section-title">Contato</div>
-          <p style="margin:0;color:var(--muted)">Preferência: email. Disponível para trabalhos remotos e presenciais.</p>
-        </div>
-      </section>
-    </main>
-
-    <div class="footer">Versão publicada localmente. Para publicar no GitHub Pages siga as instruções abaixo.</div>
+    <div class="foot">Gerado a partir de `curriculo_taua_atual.html` — atualizad
+o para publicação.</div>                                                          </div>
   </div>
+</body>
+</html>
+<div class="headline">Supervisor de Processos &amp; Inovação (PJ) • IA aplicada 
+a cursos (Moodle) • Automação &amp; Ferramentas internas • Eng. de Produção</div>                                                                               </div>
+<div class="contact">
+          São Paulo - SP<br/>
+<a href="mailto:tauapatrick1989@gmail.com">tauapatrick1989@gmail.com</a><br/>
+<a href="https://www.linkedin.com/in/tau%C3%A3-santos-20138515a/?locale=pt_BR">L
+inkedIn</a> - <a href="https://github.com/tauapatrick1989-rgb">GitHub</a>       </div>
+</div>
+<div class="grid">
+<div class="col">
+<div class="section">
+<div class="section-title">Resumo profissional</div>
+<div class="card summary">Engenheiro de Produção com atuação em liderança de pro
+cessos e inovação. Atualmente supervisiono uma equipe de 7 pessoas (2 frentes: produção de cursos com IA e desenvolvimento de automações/ferramentas) na Fundação Carlos Alberto Vanzolini, com foco em padronizar fluxos, melhorar a comunicação interna/cliente e aumentar eficiência operacional. Em paralelo, venho consolidando base técnica em Machine Learning Engineering (Python, modelagem, MLflow e FastAPI) para atuar cada vez mais próximo da construção de soluções digitais e integrações.</div>                                                                </div>
+<div class="section">
+<div class="section-title">Competências-chave</div>
+<div class="card">
+<div class="chips"><span class="chip pink">Liderança de equipe (7p)</span><span 
+class="chip">Automação de processos</span><span class="chip">IA aplicada (educação)</span><span class="chip">Gestão de Projetos / PMO</span><span class="chip">KPIs e status reports</span><span class="chip">Padronização de fluxos</span><span class="chip">Gestão de stakeholders</span><span class="chip">Gestão de riscos/issues</span><span class="chip">Moodle / AVA (produção)</span></div>             </div>
+</div>
+<div class="section">
+<div class="section-title">Formação</div>
+<div class="card two-col-mini">
+<div class="edu-item">
+<p class="item-title">Engenharia de Produção</p>
+<p class="item-meta">Centro Universitário FMU | FIAM-FAAM - 2019 a 2024</p>
+</div>
+<div class="edu-item">
+<p class="item-title">MBA em Gestão Ágil, Inovação e Liderança - em andamento</p
+>                                                                               <p class="item-meta">Fundação Vanzolini</p>
+<p class="item-sub">Ênfase em agilidade, análise de dados, design thinking, IA p
+ara negócios, product management e métricas ágeis.</p>                          </div>
+<div class="edu-item">
+<p class="item-title">Pós Tech em Machine Learning Engineering - em andamento</p
+>                                                                               <p class="item-meta">FIAP + Alura</p>
+<p class="item-sub">Ênfase atual em reprodutibilidade, treinamento de modelos, A
+PIs e engenharia de ML para produção.</p>                                       </div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="section">
+<div class="section-title">Experiência profissional</div>
+<div class="exp-item">
+<div class="exp-top">
+<div>
+<p class="exp-role">Supervisor de Processos &amp; Inovação (PJ) — IA e Automação
+</p>                                                                            <p class="exp-org">Fundação Carlos Alberto Vanzolini • Remoto</p>
+</div>
+<div class="exp-date">set/2024 - atual</div>
+</div>
+<ul><li>Supervisão de equipe de inovação (7 pessoas / 2 frentes): 3 desenvolvedo
+res focados em automações e ferramentas para áreas internas e clientes, e time de produção de cursos com integração de IA.</li><li>Organização e melhoria de fluxos ponta a ponta (briefing → produção → revisão → publicação), incluindo estruturação de cursos no AVA Moodle.</li><li>Implementação de processos com IA generativa de forma segura para apoiar produção (roteiro, estrutura, apoio à criação de imagens/vídeos e padronização de conteúdo).</li><li>Liderança de rotinas e comunicação interna/cliente, coordenação de entregas, alinhamento de prioridades e mitigação de dependências entre áreas.</li><li>Elaboração de relatórios e acompanhamento de indicadores (KPIs), apoiando a coordenação de projetos de ações formativas (ex.: EFAPE) e entregas recorrentes.</li></ul>                           </div>
+<div class="exp-item">
+<div class="exp-top">
+<div>
+<p class="exp-role">Analista de Processos de Sistemas</p>
+<p class="exp-org">Igreja Universal do Reino de Deus - Terceirizado - Presencial</p>
+</div>
+<div class="exp-date">jul/2024 - set/2024</div>
+</div>
+<ul>
+<li>Suporte à reestruturação do organograma de gestão de projetos na área de TI.</li>
+<li>Elaboração e alimentação do portfólio de projetos, fluxogramas e documentos 
+padrão.</li>                                                                    <li>Apoio à migração de cronogramas e portfólios do MS Project para Oracle Prima
+vera.</li>                                                                      </ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div>
+<p class="exp-role">Assistente PCP - Estágio</p>
+<p class="exp-org">Altaplast - São Paulo, SP - Presencial</p>
+</div>
+<div class="exp-date">fev/2023 - jul/2024</div>
+</div>
+<ul>
+<li>Controle de metas diárias e acumuladas, cálculos de produção e apoio à progr
+amação de maquinário.</li>                                                      <li>Controle de documentação do sistema de gestão da qualidade e suporte a rotin
+as operacionais.</li>                                                           </ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div>
+<p class="exp-role">Estagiário de Projetos</p>
+<p class="exp-org">Fundação Vanzolini - Remoto</p>
+</div>
+<div class="exp-date">mar/2021 - jan/2023</div>
+</div>
+<ul>
+<li>Implementação e documentação de metodologias ágeis e elaboração de fluxogram
+as de processo.</li>                                                            <li>Atualização de processos para o DETRAN-SP e apoio ao gerenciamento de tempos
+ de produção para materiais da SEDUC-SP.</li>                                   </ul>
+</div>
+<div class="exp-item">
+<div class="exp-top">
+<div>
+<p class="exp-role">Aprendiz - Análise de Indicadores</p>
+<p class="exp-org">ADT</p>
+</div>
+<div class="exp-date">fev/2018 - abr/2019</div>
+</div>
+<ul>
+<li>Apoio à análise de indicadores operacionais, consolidação de relatórios e ac
+ompanhamento de rotina de performance.</li>                                     </ul>
+</div>
+</div>
+<div class="section">
+<div class="section-title">Machine learning - em andamento</div>
+<div class="card" style="padding:8px 9px;">
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+<div style="border:1px solid var(--line); border-radius:8px; padding:7px 8px;">
+<div style="font-size:9.1px; font-weight:800; margin-bottom:3px;">Problema e mét
+ricas</div>                                                                     <div style="font-size:8.9px; line-height:1.4; color:var(--muted);">EDA, AUC-ROC,
+ PR-AUC, F1 e baselines com Scikit-Learn.</div>                                 </div>
+<div style="border:1px solid var(--line); border-radius:8px; padding:7px 8px;">
+<div style="font-size:9.1px; font-weight:800; margin-bottom:3px;">Treinamento de
+ modelos</div>                                                                  <div style="font-size:8.9px; line-height:1.4; color:var(--muted);">MLP em PyTorc
+h, batching, early stopping e comparação técnica.</div>                         </div>
+<div style="border:1px solid var(--line); border-radius:8px; padding:7px 8px;">
+<div style="font-size:9.1px; font-weight:800; margin-bottom:3px;">MLOps básico</
+div>                                                                            <div style="font-size:8.9px; line-height:1.4; color:var(--muted);">MLflow (track
+ing), reprodutibilidade, estrutura src/, testes (pytest/pandera) e linting (ruff).</div>                                                                        </div>
+<div style="border:1px solid var(--line); border-radius:8px; padding:7px 8px;">
+<div style="font-size:9.1px; font-weight:800; margin-bottom:3px;">API e produção
+</div>                                                                          <div style="font-size:8.9px; line-height:1.4; color:var(--muted);">FastAPI (/pre
+dict, /health), Pydantic, logging estruturado, Model Card e plano inicial de monitoramento.</div>                                                               </div>
+</div>
+</div>
+</div>
+<div class="foot">Em resumo: experiência prática liderando times e entregas em e
+ducação corporativa e automação, com forte base em processos, indicadores e governança. Paralelamente, avanço a parte técnica na pós de Machine Learning Engineering para construir soluções cada vez mais orientadas a dados (modelagem, APIs e boas práticas de engenharia).</div>                                            </div>
+</div>
+</div>
+</div>
 </body>
 </html>
 
