@@ -62,6 +62,15 @@
     .focus strong{display:block;font-size:10.7px;margin-bottom:3px}
     .focus span{display:block;font-size:9.8px;color:var(--muted);line-height:1.45}
     .callout{padding:12px 13px;border-left:3px solid var(--accent);background:#fff7f9;border-radius:8px;color:var(--muted);font-size:10.6px;line-height:1.55}
+    .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .project{border:1px solid var(--line);border-radius:14px;padding:13px 14px;background:#fff}
+    .project-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+    .project-title{margin:0;font-size:11.3px;font-weight:800}
+    .project-status{font-size:9.2px;font-weight:800;padding:4px 7px;border-radius:999px;background:var(--soft);border:1px solid var(--line);white-space:nowrap}
+    .project-text{margin:0;color:var(--muted);font-size:10.2px;line-height:1.5}
+    .project-tech{margin-top:8px;font-size:9.4px;color:var(--muted-2);font-weight:700}
+    .project-link{display:inline-block;margin-top:8px;font-size:9.8px;font-weight:800;color:#9c1738}
+    .project-link:hover{color:var(--accent)}
     .footer{margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-size:9.8px;color:var(--muted-2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     .print-note{display:none}
     @media (max-width:820px){
@@ -77,6 +86,7 @@
       .name{font-size:21px}
       .headline{font-size:12px}
       .focus-grid{grid-template-columns:1fr}
+      .project-grid{grid-template-columns:1fr}
       .exp-head{grid-template-columns:1fr}
       .exp-date{white-space:normal}
     }
@@ -107,8 +117,9 @@
         <div class="contact">
           São Paulo - SP<br>
           <a href="mailto:tauapatrick1989@gmail.com">tauapatrick1989@gmail.com</a><br>
-          <a href="https://www.linkedin.com/in/tau%C3%A3-santos-20138515a/?locale=pt_BR" target="_blank" rel="noopener">LinkedIn</a> ·
-          <a href="https://github.com/tauapatrick1989-rgb" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/tau%C3%A3-santos-20138515a/" target="_blank" rel="noopener">LinkedIn</a> ·
+          <a href="https://github.com/tauapatrick1989-rgb" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="#projetos">Projetos</a>
         </div>
       </header>
 
@@ -117,7 +128,7 @@
           <section class="section">
             <h2 class="section-title">Resumo profissional</h2>
             <div class="card summary">
-              Engenheiro de Produção com experiência em projetos, melhoria de processos, indicadores e liderança de equipes. Desde janeiro de 2026, atuo como Supervisor de Processos e Inovação na Fundação Vanzolini, coordenando uma equipe multidisciplinar responsável por cursos digitais, automações e ferramentas internas. Atualmente direciono meu desenvolvimento para Data Analytics, BI e automação aplicada à tomada de decisão.
+              Engenheiro de Produção com experiência em projetos, processos, indicadores e liderança de equipes. Desde janeiro de 2026, atuo como Supervisor de Processos e Inovação na Fundação Vanzolini, supervisionando uma equipe multidisciplinar de 8 profissionais. Coordeno uma operação de até 3 cursos simultâneos, com aproximadamente 100 horas de produção por mês, além de demandas de automação e ferramentas internas. Meu desenvolvimento profissional está direcionado a Data Analytics, BI, SQL, Python e automação aplicada à tomada de decisão.
             </div>
           </section>
 
@@ -129,6 +140,8 @@
                 <span class="chip accent">Melhoria de Processos</span>
                 <span class="chip">Business Intelligence</span>
                 <span class="chip">SQL</span>
+                <span class="chip">Python</span>
+                <span class="chip">Power BI</span>
                 <span class="chip">KPIs e Indicadores</span>
                 <span class="chip">Automação de Processos</span>
                 <span class="chip">Gestão de Projetos / PMO</span>
@@ -266,9 +279,53 @@
             </article>
           </div>
 
+
+          <section class="section" id="projetos">
+            <h2 class="section-title">Projetos &amp; Portfólio</h2>
+            <div class="project-grid">
+              <article class="project">
+                <div class="project-head">
+                  <h3 class="project-title">Data Analytics — Pós Tech</h3>
+                  <span class="project-status">Em desenvolvimento</span>
+                </div>
+                <p class="project-text">Projetos acadêmicos e práticos voltados a análise exploratória, estatística, SQL, Python, visualização, indicadores e tomada de decisão orientada por dados.</p>
+                <div class="project-tech">Python · SQL · BI · Estatística · Storytelling</div>
+              </article>
+
+              <article class="project">
+                <div class="project-head">
+                  <h3 class="project-title">Dashboard em Python</h3>
+                  <span class="project-status">Em evolução</span>
+                </div>
+                <p class="project-text">Projeto de estudo para consolidar tratamento de dados, construção de indicadores e visualização em uma aplicação analítica.</p>
+                <div class="project-tech">Python · Pandas · Dashboards</div>
+              </article>
+
+              <article class="project">
+                <div class="project-head">
+                  <h3 class="project-title">Currículo &amp; Portfólio Web</h3>
+                  <span class="project-status">Publicado</span>
+                </div>
+                <p class="project-text">Página profissional responsiva usada como vitrine de experiência, formação, competências e evolução para Data Analytics.</p>
+                <div class="project-tech">HTML · CSS · GitHub Pages</div>
+                <a class="project-link" href="https://github.com/tauapatrick1989-rgb/HTML" target="_blank" rel="noopener">Ver repositório →</a>
+              </article>
+
+              <article class="project">
+                <div class="project-head">
+                  <h3 class="project-title">Estudos anteriores em ML</h3>
+                  <span class="project-status">Arquivo técnico</span>
+                </div>
+                <p class="project-text">Registro de uma trilha anterior de Machine Learning Engineering, mantido como referência técnica complementar e não como foco profissional atual.</p>
+                <div class="project-tech">Python · Pandas · Scikit-learn · MLflow</div>
+                <a class="project-link" href="https://github.com/tauapatrick1989-rgb/MLE" target="_blank" rel="noopener">Ver estudos →</a>
+              </article>
+            </div>
+          </section>
+
           <section class="section">
             <h2 class="section-title">Posicionamento profissional</h2>
-            <div class="callout">Busco consolidar uma atuação que conecte dados, processos e tecnologia para identificar oportunidades, melhorar operações, automatizar rotinas e apoiar decisões de negócio com informação confiável.</div>
+            <div class="callout">Minha evolução profissional está direcionada a funções que conectem dados, processos e tecnologia. O objetivo é usar análise, BI e automação para melhorar controles, identificar oportunidades e apoiar decisões com informação confiável, aproveitando minha experiência prévia em operações, projetos e liderança.</div>
           </section>
         </section>
       </div>
