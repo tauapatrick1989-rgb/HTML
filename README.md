@@ -1,20 +1,36 @@
-# GitHub Pages
+# Tauã P. S. Silva — Portfólio profissional
 
-Este pacote está pronto para ser publicado em um repositório vazio usando GitHub Pages.
+Este repositório publica meu currículo e portfólio profissional em GitHub Pages.
 
-## Arquivos
-- `index.html`: página principal 
-- `.nojekyll`: evita processamento do Jekyll e reduz risco de conflito com arquivos estáticos
+**Atuação atual:** Supervisor de Processos e Inovação  
+**Direção profissional:** Data Analytics, Business Intelligence, automação de processos e melhoria contínua  
+**Formação:** Engenharia de Produção, Pós Tech em Data Analytics e MBA em Gestão Ágil, Inovação e Liderança
 
-## Como publicar no GitHub Pages
-1. Crie um repositório vazio no GitHub.
-2. Envie o conteúdo desta pasta para a raiz do repositório.
-3. No GitHub, vá em **Settings > Pages**.
-4. Em **Build and deployment**, escolha:
-   - **Source**: `Deploy from a branch`
-   - **Branch**: `main`
-   - **Folder**: `/ (root)`
-5. Salve e aguarde a URL ser gerada.
+## Perfil
 
-## Observação
-Este `index.html` já contém o CSS embutido no próprio arquivo, então não é necessário um `style.css` separado para funcionar.
+Atuo com gestão de processos, projetos, indicadores e tecnologia. Desde janeiro de 2026, supervisiono uma equipe multidisciplinar de 8 profissionais na Fundação Vanzolini, com atuação em desenvolvimento, design, design instrucional e produção audiovisual com IA.
+
+A operação conduz simultaneamente até 3 cursos, totalizando aproximadamente 100 horas de produção por mês, além de demandas de automação e ferramentas para áreas internas e clientes.
+
+Meu foco de desenvolvimento está em transformar dados operacionais em melhores decisões, controles e melhorias de processo.
+
+## Áreas de interesse
+
+- Data Analytics e Business Intelligence
+- SQL e análise de dados
+- Python aplicado a dados e automação
+- Indicadores e dashboards
+- Melhoria e automação de processos
+- Integração entre negócio e tecnologia
+- IA generativa aplicada à produtividade e análise
+
+## Portfólio
+
+A página publicada reúne minha experiência profissional, formação e competências:
+
+**GitHub Pages:** https://tauapatrick1989-rgb.github.io/HTML/
+
+## Contato
+
+- LinkedIn: https://www.linkedin.com/in/tau%C3%A3-santos-20138515a/
+- GitHub: https://github.com/tauapatrick1989-rgb
